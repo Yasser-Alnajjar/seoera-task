@@ -329,3 +329,70 @@ ul {
 .card-details .start {
   margin-top: 0.5rem;
 }
+
+.testimonials {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.testimonials .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 0.5rem;
+}
+.testimonials .title h2 {
+  color: #1249ae;
+}
+
+.testimonials .card {
+  padding: 20px;
+  position: relative;
+  overflow: visible;
+}
+.testimonials .cards {
+  gap: 3rem;
+}
+.testimonials-icon img {
+  width: 80px;
+  height: 80px;
+}
+.testimonials .testimonials-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonials .testimonials-icon .stars {
+  color: #1249ae;
+}
+
+.testimonials .testimonials-icon .content {
+  position: relative;
+}
+.testimonials .testimonials-icon .content img {
+  position: relative;
+  top: -60px;
+}
+.testimonials .testimonials-icon .content::after {
+  content: attr(data-title);
+  position: absolute;
+  background-color: green;
+  color: white;
+  bottom: 30px;
+  padding: 0.5rem;
+  right: -41px;
+  min-width: 60px;
+  height: 20px;
+  border-radius: 6px 0 0 6px;
+}
+.testimonials .testimonials-icon .content::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -35px;
+  border-width: 15px;
+  border-color: green transparent transparent transparent;
+  border-style: solid;
+  transform: rotate(46deg);
+}
